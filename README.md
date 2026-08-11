@@ -1,0 +1,1 @@
+# manifesto-project-for-cr
