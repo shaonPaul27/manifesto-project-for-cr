@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Timon — The Golden Days</title>
+<meta name="description" content="Let's go back to the golden days, holding Timon's hand. A comeback story." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,500;1,600;1,700&family=Manrope:wght@400;500;600;700;800&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="grain" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+<div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+<!-- ============ INTRO (candidate photo, light theme) ============ -->
+<section id="intro" class="intro">
+  <div class="intro__glow" aria-hidden="true"></div>
+  <div class="intro__frame" aria-hidden="true"></div>
+
+  <div class="intro__content">
+    <p class="eyebrow reveal-in">A Comeback Story</p>
+
+    <h1 class="intro__headline" data-split="words">Let's go back to the golden days.</h1>
+
+    <p class="intro__sub reveal-in reveal-in--delay-2">Holding Timon's hand.</p>
+
+    <div class="intro__photo reveal-in reveal-in--delay-2">
+      <div class="portrait-frame tilt">
+        <img src="timon.jpg" alt="Timon Ahamed, candidate for captain" id="introImg" />
+      </div>
+      <svg class="seal" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <path id="sealPathIntro" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+        </defs>
+        <circle cx="100" cy="100" r="96" class="seal__ring seal__ring--outer" />
+        <circle cx="100" cy="100" r="62" class="seal__ring seal__ring--inner" />
+        <text class="seal__text">
+          <textPath href="#sealPathIntro" startOffset="0%">CANDIDATE · FOR CAPTAIN · THE RETURN ·</textPath>
+        </text>
+        <text x="100" y="94" class="seal__mono" text-anchor="middle">TR</text>
+        <text x="100" y="114" class="seal__mono seal__mono--small" text-anchor="middle">No. 01</text>
+      </svg>
+      <p class="portrait-label">
+        <span class="portrait-label__eyebrow">Candidate for Class Representative</span>
+        <span class="portrait-label__name">Timon Ahamed</span>
+      </p>
+    </div>
+
+    <button id="enterBtn" class="enter-btn magnetic reveal-in reveal-in--delay-3" type="button">
+      <span>Enter the Golden Days</span>
+      <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+        <path d="M5 12h14M13 6l6 6-6 6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </button>
+
+    <p class="intro__hint reveal-in reveal-in--delay-3">Click to enter · Music begins</p>
+  </div>
+
+  <div class="intro__footerbar reveal-in reveal-in--delay-2">
+    <span class="intro__footerbar-name"></span>
+    <span class="intro__footerbar-dash">—</span>
+    <span class="intro__footerbar-tag"></span>
+  </div>
+</section>
+
+<!-- ============ MAIN SITE ============ -->
+<div id="site" class="site" aria-hidden="true">
+
+  <nav class="nav">
+    <span class="nav__mark">T.</span>
+    <div class="nav__links">
+      <a href="#story">Story</a>
+      <a href="#moments">Moments</a>
+      <a href="#manifesto">Manifesto</a>
+      <a href="#vote" class="nav__cta">Join the Comeback</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero__glow" aria-hidden="true"></div>
+    <div class="hero__text reveal-up">
+      <p class="eyebrow">Our Captain, Returning</p>
+      <h2 class="hero__headline" data-split="words">Some memories deserve a return.</h2>
+      <p class="hero__body">
+        I was the captain in our first semester—the one setting the pace, holding everyone together, and making those golden days feel so special. I stepped away for a bit, but I’m ready to return now. Let’s bring back the energy, the friendship, and the spirit we built back then.
+      </p>
+      <div class="hero__actions">
+        <a href="#story" class="text-link">
+          <span>The Story</span>
+          <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M12 5v14M6 13l6 6 6-6" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div class="hero__portrait reveal-up reveal-up--delay-1">
+      <div class="portrait-frame tilt">
+        <img src="timon.jpg" alt="Timon, our captain" />
+      </div>
+      <svg class="seal seal--hero" viewBox="0 0 200 200" aria-hidden="true">
+        <defs>
+          <path id="sealPathHero" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+        </defs>
+        <circle cx="100" cy="100" r="96" class="seal__ring seal__ring--outer" />
+        <circle cx="100" cy="100" r="62" class="seal__ring seal__ring--inner" />
+        <text class="seal__text">
+          <textPath href="#sealPathHero" startOffset="0%">CAPTAIN · EST. SEMESTER ONE · THE RETURN ·</textPath>
+        </text>
+        <text x="100" y="94" class="seal__mono" text-anchor="middle">TR</text>
+        <text x="100" y="114" class="seal__mono seal__mono--small" text-anchor="middle">No. 01</text>
+      </svg>
+      <p class="portrait-label">
+        <span class="portrait-label__eyebrow">Our Captain</span>
+        <span class="portrait-label__name">Timon</span>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== MARQUEE TICKER ===== -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee__track">
+      <span>The Golden Days</span><span class="marquee__dot">✦</span>
+      <span>One Captain</span><span class="marquee__dot">✦</span>
+      <span>The Comeback</span><span class="marquee__dot">✦</span>
+      <span>Bring Back Timon</span><span class="marquee__dot">✦</span>
+      <span>The Golden Days</span><span class="marquee__dot">✦</span>
+      <span>One Captain</span><span class="marquee__dot">✦</span>
+      <span>The Comeback</span><span class="marquee__dot">✦</span>
+      <span>Bring Back Timon</span><span class="marquee__dot">✦</span>
+    </div>
+  </div>
+
+  <!-- ===== STORY / TIMELINE ===== -->
+  <section id="story" class="story">
+    <div class="story__intro reveal-up">
+      <p class="eyebrow">The Story So Far</p>
+      <h2 class="story__headline" data-split="words">We remember how it felt.</h2>
+      <p class="story__lede">First semester. One captain. One team. A lot of golden memories.</p>
+      <p class="story__body">
+        It wasn't about titles. It was about someone who showed up, kept the group
+        steady when things got messy, and made every ordinary week feel like it
+        mattered. When Timon left the position, that steadiness left with him.
+        This is the chapter where it comes back.
+      </p>
+    </div>
+
+    <ol class="timeline">
+      <li class="timeline__item reveal-up">
+        <span class="timeline__num">01</span>
+        <div class="timeline__body">
+          <h3>Everyone’s Voice Matters</h3>
+          <p>Working for the entire Elysium–34, not just a particular group.</p>
+        </div>
+      </li>
+      <li class="timeline__item reveal-up reveal-up--delay-1">
+        <span class="timeline__num">02</span>
+        <div class="timeline__body">
+          <h3>Academic Updates</h3>
+          <p>Keeping everyone informed about classes, exams, assignments, routines, and important notices so no one misses essential information.</p>
+        </div>
+      </li>
+<li class="timeline__item reveal-up reveal-up--delay-1">
+        <span class="timeline__num">03</span>
+        <div class="timeline__body">
+          <h3>Better Communication</h3>
+          <p>Ensuring clear and effective communication between students and teachers on important matters.</p>
+        </div>
+      </li>
+
+      <li class="timeline__item timeline__item--highlight reveal-up reveal-up--delay-2">
+        <span class="timeline__num">04</span>
+        <div class="timeline__body">
+          <h3>Student Issues </h3>
+          <p>Raising genuine student concerns to teachers or the appropriate authority in a proper and respectful manner.</p>
+        </div>
+      </li>
+   
+<li class="timeline__item reveal-up reveal-up--delay-1">
+        <span class="timeline__num">05</span>
+        <div class="timeline__body">
+          <h3>Others ( 🎯What I'will actually do)</h3>
+          <p>📌 One Place, Everything Clear<br>📊 Transparent Decisions<br>📒 Notes & Resources Organized<br>💰Batch Money = Clear Calculation <br> 🧩Group coordination</p>
+        </div>
+      </li>
+ </ol>
+  </section>
+
+  <!-- ===== STATS BAND ===== -->
+  <section class="stats">
+    <div class="stats__item reveal-up">
+      <span class="stats__num" data-count="1">0</span>
+      <span class="stats__label">Captain</span>
+    </div>
+    <div class="stats__divider" aria-hidden="true"></div>
+    <div class="stats__item reveal-up reveal-up--delay-1">
+      <span class="stats__num" data-count="10">0</span>
+      <span class="stats__label">Golden moments, captured</span>
+    </div>
+    <div class="stats__divider" aria-hidden="true"></div>
+    <div class="stats__item reveal-up reveal-up--delay-2">
+      <span class="stats__num" data-count="100" data-suffix="%">0</span>
+      <span class="stats__label">Dedication</span>
+    </div>
+  </section>
+
+  <!-- ===== TEN PHOTO MEMORY WALL ===== -->
+  <section id="moments" class="moments">
+    <div class="moments__intro reveal-up">
+      <p class="eyebrow">The Photo Wall</p>
+      <h2 class="moments__headline" data-split="words">Ten moments. One story.</h2>
+    </div>
+
+    <div class="photo-wall">
+      <figure class="photo photo--1 tilt reveal-up">
+        <img src="timon.jpg" alt="Timon" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">01</span>
+        <figcaption>The one who wants to return.</figcaption>
+      </figure>
+
+      	`
+
+      <figure class="photo photo--3 tilt reveal-up reveal-up--delay-2">
+        <img src="group2.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">03</span>
+        <figcaption>The days we remember.</figcaption>
+      </figure>
+
+      <figure class="photo photo--4 tilt reveal-up">
+        <img src="group3.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">04</span>
+        <figcaption>The people who made it special.</figcaption>
+      </figure>
+
+      <figure class="photo photo--5 tilt reveal-up reveal-up--delay-1">
+        <img src="group4.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">05</span>
+        <figcaption>And the story continues.</figcaption>
+      </figure>
+
+      <figure class="photo photo--6 tilt reveal-up reveal-up--delay-2">
+        <img src="group5.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">06</span>
+        <figcaption>Every golden afternoon.</figcaption>
+      </figure>
+
+      <figure class="photo photo--7 tilt reveal-up">
+        <img src="group6.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">07</span>
+        <figcaption>The team behind the captain.</figcaption>
+      </figure>
+
+      <figure class="photo photo--8 tilt reveal-up reveal-up--delay-1">
+        <img src="group7.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">08</span>
+        <figcaption>Small moments, big memories.</figcaption>
+      </figure>
+
+      <figure class="photo photo--9 tilt reveal-up reveal-up--delay-2">
+        <img src="group8.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">09</span>
+        <figcaption>Still holding on to this.</figcaption>
+      </figure>
+
+      <figure class="photo photo--10 tilt reveal-up">
+        <img src="group9.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">10</span>
+        <figcaption>Golden days, golden faces.</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== MANIFESTO ===== -->
+  <section id="manifesto" class="manifesto">
+    <div class="manifesto__inner reveal-up">
+      <p class="eyebrow">The Manifesto</p>
+      <h2 class="manifesto__headline" data-split="words">Not just a comeback. A return to what mattered.</h2>
+      <p class="manifesto__body">
+        "Look, I’m not here to give you a long list of promises. I’m here because I miss how good our batch felt when we were all truly connected—when someone had our back and made every day worth showing up for. We don't have to guess what works. We already know. Let’s just bring that spirit back together." - Timon
+      </p>
+	
+
+	<figure class="photo photo--2 tilt reveal-up reveal-up--delay-1">
+        <img src="group10.jpg" alt="Group memory" />
+        <div class="photo__overlay"></div>
+        <span class="photo__num">02</span>
+        <figcaption>Where the story began.</figcaption>
+      </figure>
+
+		
+
+
+
+
+      <div class="values">
+        <span>Unity</span>
+        <span class="values__divider">—</span>
+        <span>Energy</span>
+        <span class="values__divider">—</span>
+        <span>Memories</span>
+        <span class="values__divider">—</span>
+        <span>Together</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== VOTE / CTA ===== -->
+  <section id="vote" class="cta">
+    <div class="cta__inner reveal-up">
+      <p class="eyebrow eyebrow--light">On Voting Day</p>
+      <h2 class="cta__headline" data-split="words">Let's go back to the golden days, holding Timon's hand.</h2>
+      <p class="cta__body">One vote brings back the captain. Let's make it official.</p>
+      <p>Vote For Timon — Class Representative</p>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <svg class="seal seal--footer" viewBox="0 0 200 200" aria-hidden="true">
+      <defs>
+        <path id="sealPathFooter" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+      </defs>
+      <circle cx="100" cy="100" r="96" class="seal__ring seal__ring--outer" />
+      <circle cx="100" cy="100" r="62" class="seal__ring seal__ring--inner" />
+      <text class="seal__text">
+        <textPath href="#sealPathFooter" startOffset="0%">FOR THE GOLDEN DAYS · TIMON'S TEAM ·</textPath>
+      </text>
+      <text x="100" y="94" class="seal__mono" text-anchor="middle">TR</text>
+      <text x="100" y="114" class="seal__mono seal__mono--small" text-anchor="middle">No. 01</text>
+    </svg>
+    <p class="footer__line">For the golden days.</p>
+    <p class="footer__by">— Elysium-34</p>
+  </footer>
+
+</div>
+
+<!-- ============ AUDIO + FLOATING MUSIC CONTROL ============ -->
+<audio id="theme" src="song.mp3" loop preload="auto"></audio>
+<button id="musicToggle" class="music-toggle" type="button" aria-label="Pause music" hidden>
+  <svg class="music-toggle__seal" viewBox="0 0 200 200" aria-hidden="true">
+    <defs>
+      <path id="sealPathMusic" d="M 100,100 m -78,0 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0" />
+    </defs>
+    <circle cx="100" cy="100" r="96" class="seal__ring seal__ring--outer" />
+    <circle cx="100" cy="100" r="62" class="seal__ring seal__ring--inner" />
+    <text class="seal__text">
+      <textPath href="#sealPathMusic" startOffset="0%">THE GOLDEN DAYS · NOW PLAYING ·</textPath>
+    </text>
+  </svg>
+  <svg class="icon-play" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M8 5v14l11-7z"/></svg>
+  <svg class="icon-pause" width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+</button>
+
+<script src="script.js"></script>
+</body>
+</html>
